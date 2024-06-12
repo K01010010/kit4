@@ -1,0 +1,57 @@
+name: kit4
+description: "A new Flutter project."
+version: 0.0.1
+#homepage:
+
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  #Architecture Packages
+#  mobx: ^2.3.0                            #для стейтменеджмента
+#  flutter_mobx: ^2.2.0+1                  #для стейтменеджмента
+  dio: ^5.4.0                             #для REST/CURL запросов
+  retrofit: ^4.0.3                        #для упрощенной разработки запросов на основе dio/http
+  #  web_socket_channel: ^2.4.0              #для чатов на websocket-ах
+  #  socket_io_client: ^2.0.3+1              #для чатов на websocket-ах
+  json_annotation: ^4.8.1                 #для генерации моделей и dto
+  freezed_annotation: ^2.4.1              #для генерации моделей и dto
+  auto_mappr_annotation: ^2.1.0           #для сопоставления моделей к dto
+
+  #Native Packages
+#  image_picker: ^1.1.1
+#  permission_handler: ^11.1.0             #для запроса разрешений
+  #  photo_manager_image_provider: ^2.1.0   #не работает под новый flutter
+  #  photo_manager: ^2.7.1                  #не работает под новый flutter
+  #  camera: ^0.10.5+5                      #это базовая бибилотека камеры
+  #  camera_camera: ^3.0.0                   #это упрощенная библиотека камеры
+  #  camera_avfoundation: ^0.9.13+6          #camera dependency
+  #  package_info_plus: ^4.2.0               #для получения информации о Flutter version, и версии приложения без hard-coding
+  shared_preferences: ^2.2.2             #это не защищенное хранилище общего назначения
+  flutter_secure_storage: ^9.0.0          #это защищенное от чтения из вне хранилище
+  #  path_provider: ^2.1.1                   #для доступа к разным директориям памяти
+  #  url_launcher: ^6.1.14                   #для открытия в системном бразузере нужных ссылок
+  #  image_picker: ^1.0.4                    #для выбора фоток из галлереи
+  responsive_framework: ^1.1.1            #для адаптивного интерфейса под разные размеры
+  cached_network_image: ^3.3.0            #для загрузки фото по url с кэшированием внутри приложения
+
+  #Compute Packages
+  phone_numbers_parser: ^8.2.1            #для валидации номера телефона любого региона
+
+dev_dependencies:
+  build_runner: ^2.4.7                    #для кодогенерации
+#  mobx_codegen: ^2.6.0                    #для кодогенерации стейт-менеджеров
+  auto_mappr: ^2.2.0                      #для кодогенерации сопоставителей dto к моделям
+  json_serializable: ^6.7.1               #для кодогенерации моделей и dto
+  freezed: ^2.4.6                         #для кодогенерации моделей и dto
+  retrofit_generator: ^8.0.6              #для кодогенерации REST/CURL запросов
+  flutter_lints: ^3.0.1                   #линтер
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
