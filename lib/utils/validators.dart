@@ -126,7 +126,7 @@ class Validators {
     }
 
     RegExp regExp =
-        RegExp(r"^[\w\W]{1,32}$", caseSensitive: false, multiLine: false);
+    RegExp(r"^[\w\W]{1,32}$", caseSensitive: false, multiLine: false);
     if (!regExp.hasMatch(name)) {
       return 'Недопустимый формат';
     }
@@ -135,11 +135,11 @@ class Validators {
   }
 
   static PasswordValidationResult passwordValidation(
-    String? password, {
-    int? minLength,
-    int? maxLength,
-    // String? startWith,
-  }) {
+      String? password, {
+        int? minLength,
+        int? maxLength,
+        // String? startWith,
+      }) {
     if (password == null || password.replaceAll(' ', '') == '') {
       return PasswordValidationResult(true, false, false, false);
     }
@@ -167,11 +167,11 @@ class Validators {
 
 class PasswordValidationResult {
   PasswordValidationResult(
-    this.empty,
-    this.numberSymbols,
-    this.capitalLettersNumbers,
-    this.specialSymbols,
-  );
+      this.empty,
+      this.numberSymbols,
+      this.capitalLettersNumbers,
+      this.specialSymbols,
+      );
 
   final bool empty;
   final bool numberSymbols;
